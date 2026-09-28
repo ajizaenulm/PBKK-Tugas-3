@@ -1,7 +1,4 @@
-<x-layout>
-
-    <!-- Navbar -->
-    @include('partials.navbar')
+<x-layouts.app title="404 — Page Not Found | ITS Informatics">
 
     <!-- Hero / 404 Error Section -->
     <section
@@ -48,7 +45,4 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    @include('partials.footer')
-
-</x-layout>
+</x-layouts.app>

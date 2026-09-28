@@ -1,26 +1,22 @@
-# PBKK-Tugas-2
-
-## Website Link
-
-[http://172.188.98.77/](http://172.188.98.77/)
-
 ## Local Setup
 
 ```
-git clone git@github.com:theRadn/PBKK-Tugas-2.git
-cd PBKK-Tugas-2
+git clone https://github.com/ajizaenulm/PBKK-Tugas-3.git
+cd PBKK-Tugas-3
 composer install
 npm install
 cp .env.example .env
-php key:generate
+php artisan key:generate
 php artisan migrate
 composer run dev
 ```
 
 ## Routes list
-- `/` home page <br>
-- `/agent/{tema?}` agent page <br>
-- `/mahasiswa/{nrp 10 digit}` student profile page <br>
-- `/hitung-ipk/{ip1?}/{ip2?}` ipk calculator <br>
-- `/dashboard/mahasiswa/{nrp 10 digit}` student profile page but using dashboard prefix <br>
-- `/dashboard/` home page but using dashboard prefix <br>
+
+- `/` home page
+- `/?mode={dark | light}` change to dark / light theme
+- `/beranda` home page
+- `/beranda?user={name}` home page with greeting notification
+- `/ide-agent` agent idea page
+- `/profil-mahasiswa` student detail page
+- `POST /agent/idea` send agent idea
